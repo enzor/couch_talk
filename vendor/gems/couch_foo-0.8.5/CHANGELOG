@@ -1,0 +1,21 @@
+0.7.0 - Initial release
+0.7.1 - Fixed validates_uniqueness_of bug
+0.7.2 - Fixed readable attribute names for errors
+0.7.3 - Fixed read attribute bug
+0.7.4 - Any type can be used as a property if it provides .to_json and class.from_json methods
+0.7.5 - Issues with jeweler updating gem spec (to functional changes)
+0.7.6 - As above
+0.7.7 - Introduce serialization support for .to_xml and friends
+0.7.8 - _id and _rev are not valid XML so converted to id and rev on .to_xml call
+0.7.9 - Make Model.find order by :created_at if no conditions present and fix initialisation of non-native types
+0.7.10 - Fixed clone bug and added CouchDB introduction section to readme
+0.7.11 - Fixed 2nd bug with clone
+0.7.12 - Fix typos in readme
+0.7.13 - Automatically detect CouchDB version, alter set_database parameters, fix conflict bug
+0.7.14 - Fix date/time types in .to_xml
+0.8.0 - Allow :id and :rev in attributes= method, although values will be ignored.  Minor version change an accident, should have been patch
+0.8.1 - Address.find.all in readme should be Address.all
+0.8.2 - Add link to blog post on using objects with models
+0.8.3 - Fix API changes in CouchREST, proper exception thrown for non-started CouchDB and catch CouchDB 0.9 new conflict codes
+0.8.4 - Improve database version handling
+0.8.5 - Support new RestClient
