@@ -10,8 +10,9 @@ require 'faker'
 end
 
 
-200.times do 
+20.times do 
   Post.create(
+    :title => Faker::Lorem.paragraph,
     :body => Faker::Lorem.paragraphs(9),
     :user_id => User.first.id,
     :created_at => DateTime.now

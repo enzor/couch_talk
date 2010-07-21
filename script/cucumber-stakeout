@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# DESCRIPTION: Watches files and runs cucumber when they change.
+# AUTHOR:      Geoffrey Grosenbach http://peepcode.com
+# CREATED:     January 21, 2010
+#
+# REQUIREMENTS: The rstakeout Ruby script.
+
+./script/rstakeout "./script/cucumber $*" "features/**/*.feature" "features/**/*.rb" "app/**/*.rb" "app/**/*.html.*"

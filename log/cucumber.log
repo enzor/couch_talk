@@ -1,0 +1,85 @@
+# Logfile created on Wed Jul 21 12:02:38 +0200 2010REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-07-21 12:09:41) [GET]
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 341ms (View: 243 | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-07-21 12:18:27) [GET]
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 374ms (View: 276 | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-07-21 12:19:10) [GET]
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 242ms (View: 150 | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-07-21 12:19:21) [GET]
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 301ms (View: 201 | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /posts/c96e8400-76d9-012d-510f-001b632eab2e with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+
+
+Processing PostsController#show (for 127.0.0.1 at 2010-07-21 12:19:22) [GET]
+  Parameters: {"id"=>"c96e8400-76d9-012d-510f-001b632eab2e"}
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2010-07-21 12:19:22) [GET]
+  Parameters: {"id"=>"c96e8400-76d9-012d-510f-001b632eab2e"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-07-21 12:20:04) [GET]
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 230ms (View: 138 | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /posts/c96e8400-76d9-012d-510f-001b632eab2e with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+
+
+Processing PostsController#show (for 127.0.0.1 at 2010-07-21 12:20:04) [GET]
+  Parameters: {"id"=>"c96e8400-76d9-012d-510f-001b632eab2e"}
+Rendering template within layouts/application
+Rendering posts/show
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2010-07-21 12:20:04) [GET]
+  Parameters: {"id"=>"c96e8400-76d9-012d-510f-001b632eab2e"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-07-21 12:20:36) [GET]
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 235ms (View: 144 | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /posts/c96e8400-76d9-012d-510f-001b632eab2e with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+
+
+Processing PostsController#show (for 127.0.0.1 at 2010-07-21 12:20:36) [GET]
+  Parameters: {"id"=>"c96e8400-76d9-012d-510f-001b632eab2e"}
+Rendering template within layouts/application
+Rendering posts/show
+Completed in 11ms (View: 7 | 200 OK [http://www.example.com/posts/c96e8400-76d9-012d-510f-001b632eab2e]
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-07-21 12:21:01) [GET]
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 241ms (View: 149 | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /posts/c96e8400-76d9-012d-510f-001b632eab2e with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+
+
+Processing PostsController#show (for 127.0.0.1 at 2010-07-21 12:21:01) [GET]
+  Parameters: {"id"=>"c96e8400-76d9-012d-510f-001b632eab2e"}
+Rendering template within layouts/application
+Rendering posts/show
+Completed in 12ms (View: 6 | 200 OK [http://www.example.com/posts/c96e8400-76d9-012d-510f-001b632eab2e]

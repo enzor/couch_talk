@@ -1,4 +1,5 @@
 class Post < CouchFoo::Base  
+  property :title, String
   property :body, Text
   property :user_id, String
   property :created_at , DateTime

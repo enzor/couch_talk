@@ -31,3 +31,146 @@ Unable to create document: Couldn't find document
 Unable to create document: Couldn't find document
 Unable to create document: Couldn't find document
 Unable to create document: Couldn't find document
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-21 11:37:50) [GET]
+
+NameError (uninitialized constant PostsController):
+  
+
+Rendered rescues/_trace (109.5ms)
+Rendered rescues/_request_and_response (23.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-21 11:39:42) [GET]
+
+NameError (uninitialized constant PostsController):
+  
+
+Rendered rescues/_trace (103.0ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-21 11:39:43) [GET]
+
+NameError (uninitialized constant PostsController):
+  
+
+Rendered rescues/_trace (30.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-21 11:39:47) [GET]
+
+NameError (uninitialized constant PostsController):
+  
+
+Rendered rescues/_trace (30.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2010-07-21 11:40:11) [GET]
+  Parameters: {"id"=>"index"}
+
+NameError (uninitialized constant PostsController):
+  
+
+Rendered rescues/_trace (36.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2010-07-21 11:40:46) [GET]
+  Parameters: {"id"=>"index"}
+
+NameError (uninitialized constant PostsController):
+  
+
+Rendered rescues/_trace (100.3ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-21 11:40:48) [GET]
+
+NameError (uninitialized constant PostsController):
+  
+
+Rendered rescues/_trace (30.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-07-21 11:41:55) [GET]
+
+RestClient::BadRequest (Bad Request):
+  /Users/enzo/.rvm/gems/ruby-1.8.7-p174/gems/rest-client-1.6.0/lib/restclient/abstract_response.rb:53:in `return!'
+  /Users/enzo/.rvm/gems/ruby-1.8.7-p174/gems/rest-client-1.6.0/lib/restclient/request.rb:220:in `process_result'
+  /Users/enzo/.rvm/gems/ruby-1.8.7-p174/gems/rest-client-1.6.0/lib/restclient/request.rb:169:in `transmit'
+  /Users/enzo/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/net/http.rb:543:in `start'
+  /Users/enzo/.rvm/gems/ruby-1.8.7-p174/gems/rest-client-1.6.0/lib/restclient/request.rb:166:in `transmit'
+  /Users/enzo/.rvm/gems/ruby-1.8.7-p174/gems/rest-client-1.6.0/lib/restclient/request.rb:60:in `execute'
+  /Users/enzo/.rvm/gems/ruby-1.8.7-p174/gems/rest-client-1.6.0/lib/restclient/request.rb:31:in `execute'
+  /Users/enzo/.rvm/gems/ruby-1.8.7-p174/gems/rest-client-1.6.0/lib/restclient.rb:68:in `get'
+  couchrest (0.24) [v] lib/couchrest.rb:156:in `get'
+  couchrest (0.24) [v] lib/couchrest/core/database.rb:74:in `view'
+  vendor/gems/couch_foo-0.8.5/lib/couch_foo/database.rb:69:in `view'
+  vendor/gems/couch_foo-0.8.5/lib/couch_foo/view_methods.rb:97:in `do_query_view'
+  vendor/gems/couch_foo-0.8.5/lib/couch_foo/view_methods.rb:83:in `query_view'
+  vendor/gems/couch_foo-0.8.5/lib/couch_foo/view_methods.rb:55:in `generic_view'
+  vendor/gems/couch_foo-0.8.5/lib/couch_foo/view_methods.rb:25:in `find_view'
+  vendor/gems/couch_foo-0.8.5/lib/couch_foo/base.rb:1249:in `find_every'
+  vendor/gems/couch_foo-0.8.5/lib/couch_foo/base.rb:628:in `find'
+  vendor/gems/couch_foo-0.8.5/lib/couch_foo/base.rb:648:in `all'
+  app/controllers/posts_controller.rb:3:in `index'
+
+Rendered rescues/_trace (112.3ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-07-21 11:42:19) [GET]
+
+ActionView::MissingTemplate (Missing template posts/index.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-07-21 11:42:32) [GET]
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 422ms (View: 331 | 200 OK [http://localhost/]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-07-21 11:42:50) [GET]
+Rendering template within layouts/application
+Rendering posts/index
+
+ActionView::TemplateError (wrong number of arguments (0 for 1)) on line #10 of app/views/posts/index.html.erb:
+7: 	<% @posts.each do |post| %>
+8: 	<tr>
+9: 		<td><%=h post.title %></td>
+10: 		<td><%=h post.body.slice[0..100]%></td>
+11: 		<td><%=h post.user.login %></td>
+12: 	</tr>
+13: 	<% end %>
+
+    app/views/posts/index.html.erb:10:in `slice'
+    app/views/posts/index.html.erb:10
+    app/views/posts/index.html.erb:7:in `each'
+    app/views/posts/index.html.erb:7
+
+Rendered rescues/_trace (46.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-07-21 11:43:00) [GET]
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 208ms (View: 106 | 200 OK [http://localhost/]
