@@ -8,4 +8,8 @@ class Post < CouchFoo::Base
   
   belongs_to :user
   
+  validates_presence_of :title, :body, :user_id
+  validates_length_of :body, :within => 10..1000
+  validates_length_of :title, :within => 4..50
+  
 end

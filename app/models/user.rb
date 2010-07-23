@@ -6,5 +6,7 @@ class User < CouchFoo::Base
   
   has_many :posts
   
+  validates_presence_of :login, :email , :password
+  
   default_sort :created_at
 end
