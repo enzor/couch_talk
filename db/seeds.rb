@@ -13,8 +13,8 @@ end
 20.times do 
   Post.create(
     :title => Faker::Lorem.paragraph,
-    :body => Faker::Lorem.paragraphs(9),
-    :user_id => User.first.id,
+    :body => Faker::Lorem.paragraphs(5),
+    :user  => User.first,
     :created_at => DateTime.now
     )
 end

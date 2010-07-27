@@ -1,14 +1,16 @@
-class Post < CouchFoo::Base  
-  property :title, String
-  property :body, Text
-  property :user_id, String
-  property :created_at , DateTime
+class Post 
+  include SimplyStored::Couch
   
-  default_sort :created_at
+  property :title
+  property :body
+  property :created_at , :type =>  DateTime
+  
+  has_many :posts, :dependent => :destroy
+  has_many :users ,:through => :posts
   
   belongs_to :user
   
-  validates_presence_of :title, :body, :user_id
+  validates_presence_of :title, :body
   validates_length_of :body, :within => 10..1000
   validates_length_of :title, :within => 4..50
   

@@ -20,6 +20,3 @@ ActiveSupport.use_standard_json_time_format = true
 # if you're including raw json in an HTML page.
 ActiveSupport.escape_html_entities_in_json = false
 
-
-CouchFoo::Base.set_database(:host => "http://localhost:5984", :database => "couch_foo")
-CouchFoo::Base.logger = Rails.logger

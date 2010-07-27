@@ -1,0 +1,3 @@
+development: http://localhost:5984/blog
+test: http://localhost:5984/blog_test
+production: http://localhost:5984/blog_production
