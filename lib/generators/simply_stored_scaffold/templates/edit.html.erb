@@ -1,0 +1,6 @@
+<h1>Editing <%= name.downcase %></h1>
+
+<%= render_partial %>
+
+<%%= link_to 'Show', @<%= name.downcase %> %> |
+<%%= link_to 'Back', <%= name.downcase.pluralize %>_path %>

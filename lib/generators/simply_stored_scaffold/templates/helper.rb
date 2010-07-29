@@ -1,0 +1,4 @@
+module <%= name %>Helper
+  
+  
+end
