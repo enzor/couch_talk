@@ -3,7 +3,8 @@ require 'faker'
 10.times do 
   User.create(
   :login => Faker::Name.name,
-  :password => Faker::Name.prefix,
+  :password => "forever",
+  :password => "forever",
   :email => Faker::Internet.email,
   :created_at => DateTime.now
   )

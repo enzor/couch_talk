@@ -10,9 +10,10 @@ Rails::Initializer.run do |config|
   config.gem 'couchrest'
   config.gem 'couch_potato'
   config.gem 'simply_stored'
+  config.gem 'devise' , :version => "1.0.8"
   # Settings in config/environments/* take precedence over those specified here.
   # Application configuration should go into files in config/initializers
-  # -- all .rb files in that directory are automatically loaded.
+  # -- all .rb files in that directory are automatically, loaded.
 
   # Add additional load paths for your own custom dirs
   # config.load_paths += %W( #{RAILS_ROOT}/extras )
