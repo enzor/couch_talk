@@ -1,4 +1,4 @@
-module <%= name %>Helper
+module <%= name.camelize %>Helper
   
   
 end

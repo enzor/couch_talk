@@ -1,9 +1,15 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :books
+
+  
+  
+
+  
+  map.resources :posts
+  
   
   
   map.root :controller => 'posts'
-  
-  map.resources :posts
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:

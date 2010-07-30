@@ -1,0 +1,12 @@
+<%% form_for(@<%= name.downcase %>) do |f| %>
+  <%%= f.error_messages %>
+<%- for attribute in attributes -%>
+  <p>
+    <%%= f.label :<%= attribute[0].downcase %> %><br />
+    <%%= f.<%= find_field(attribute[1].downcase) %> :<%= attribute[0].downcase %> %>
+  </p>
+<%- end -%>
+  <p>
+    <%%= f.submit 'Create' %>
+  </p>
+<%% end %>

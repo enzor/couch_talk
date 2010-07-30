@@ -11,6 +11,7 @@ Rails::Initializer.run do |config|
   config.gem 'couch_potato'
   config.gem 'simply_stored'
   config.gem 'devise' , :version => "1.0.8"
+  #config.gem 'rocking_chair'
   # Settings in config/environments/* take precedence over those specified here.
   # Application configuration should go into files in config/initializers
   # -- all .rb files in that directory are automatically, loaded.

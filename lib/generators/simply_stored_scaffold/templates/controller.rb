@@ -1,4 +1,4 @@
-class <%= name.capitalize %>Controller < ApplicationController
+class <%= name.camelize.pluralize %>Controller < ApplicationController
  
   def index
     @<%= name.downcase.pluralize %> = <%= name.capitalize %>.all
@@ -18,7 +18,7 @@ class <%= name.capitalize %>Controller < ApplicationController
   end
 
   def create
-    @<%= name.downcase %> = <%= name.capitalize %>.new(params[:sample])
+    @<%= name.downcase %> = <%= name.capitalize %>.new(params[:<%= name.downcase %>])
 
     respond_to do |format|
       if @<%= name.downcase %>.save
