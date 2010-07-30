@@ -744,3 +744,5 @@ Processing BooksController#index (for 127.0.0.1 at 2010-07-30 17:11:16) [GET]
 Rendering template within layouts/application
 Rendering books/index
 Completed in 53ms (View: 2 | 200 OK [http://localhost/books]
+** couch_potato: initialized from /Users/enzo/progetti/dressipi/couch_talk/vendor/gems/couch_potato-0.3.0/rails/init.rb
+** couch_potato: initialized from /Users/enzo/progetti/dressipi/couch_talk/vendor/gems/couch_potato-0.3.0/rails/init.rb

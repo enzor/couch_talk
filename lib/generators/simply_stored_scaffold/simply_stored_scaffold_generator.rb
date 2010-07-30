@@ -36,12 +36,11 @@ class SimplyStoredScaffoldGenerator < Rails::Generator::Base
   end
   
   def typize(type)
-    if ["boolean"].include?(type.downcase)
-      return ", :type => :#{type.downcase}"
-    elsif ["time","datetime"].include?(type.downcase)
-      return ", :type => #{type.camelize}"
+    case type
+      when "boolean"              then ", :type => :#{type.downcase}"
+      when "time","datetime"      then ", :type => #{type.camelize}"
     else
-      return nil
+      nil
     end
   end
   
