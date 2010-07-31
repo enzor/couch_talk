@@ -1,0 +1,7 @@
+= Couch Talk
+
+== Overview
+
+Here we are! 
+This will be a normal blog project,and my first experiment, made with Rails and CouchDB  thanks to couchrest,couch_potato and simply_stored.
+Enjoy, hope that will be useful to anyone!
