@@ -3,6 +3,7 @@ class User
   
   devise :registerable, :database_authenticatable, :recoverable, :rememberable, :validatable
          
+  property :username
   property :email
   property :password
   property :password_confirmation
@@ -12,9 +13,10 @@ class User
   property :database_authenticatable ,:null => false
   property :recoverable
   property :rememberable
+  property :remember_token
 
 
-  attr_accessible :email, :password, :password_confirmation
+  attr_accessible :username,:email, :password, :password_confirmation
   
   
   

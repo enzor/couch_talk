@@ -16,3 +16,445 @@
 ** couch_potato: initialized from /Users/enzo/progetti/dressipi/couch_talk/vendor/gems/couch_potato-0.3.0/rails/init.rb
 ** couch_potato: initialized from /Users/enzo/progetti/dressipi/couch_talk/vendor/gems/couch_potato-0.3.0/rails/init.rb
 ** couch_potato: initialized from /Users/enzo/progetti/dressipi/couch_talk/vendor/gems/couch_potato-0.3.0/rails/init.rb
+** couch_potato: initialized from /Users/enzo/progetti/dressipi/couch_talk/vendor/gems/couch_potato-0.3.0/rails/init.rb
+** couch_potato: initialized from /Users/enzo/progetti/dressipi/couch_talk/vendor/gems/couch_potato-0.3.0/rails/init.rb
+** couch_potato: initialized from /Users/enzo/progetti/dressipi/couch_talk/vendor/gems/couch_potato-0.3.0/rails/init.rb
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-08-07 11:13:33) [GET]
+Rendering template within layouts/application
+Rendering posts/index
+
+ActionView::TemplateError (undefined method `login' for nil:NilClass) on line #11 of app/views/posts/index.html.erb:
+8: 	<tr>
+9: 		<td><%= link_to post.title, post %></td>
+10: 		<td><%=h post.body[0..10]%></td>
+11: 		<td><%=h post.user.login %></td>
+12: 	</tr>
+13: 	<% end %>
+14: </table>
+
+    app/views/posts/index.html.erb:11
+    app/views/posts/index.html.erb:7:in `each'
+    app/views/posts/index.html.erb:7
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+    warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendered rescues/_trace (49.3ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+** couch_potato: initialized from /Users/enzo/progetti/dressipi/couch_talk/vendor/gems/couch_potato-0.3.0/rails/init.rb
+** couch_potato: initialized from /Users/enzo/progetti/dressipi/couch_talk/vendor/gems/couch_potato-0.3.0/rails/init.rb
+** couch_potato: initialized from /Users/enzo/progetti/dressipi/couch_talk/vendor/gems/couch_potato-0.3.0/rails/init.rb
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-08-07 11:17:19) [GET]
+Rendering template within layouts/application
+Rendering posts/index
+
+ActionView::TemplateError (undefined local variable or method `new_user_registration' for #<ActionView::Base:0x23b1c24>) on line #16 of app/views/layouts/application.html.erb:
+13: 			<%= link_to "Edit your data", edit_user_registration %> | 
+14: 			<%= link_to "Logout", destroy_user_session %> 
+15: 		<% else %>
+16: 			<%= link_to "Register", new_user_registration %> | 
+17: 	 		<%= link_to "Login", new_user_session %>
+18: 		<% end %>
+19: 	  </div>
+
+    app/views/layouts/application.html.erb:16
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+    warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendered rescues/_trace (49.3ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+** couch_potato: initialized from /Users/enzo/progetti/dressipi/couch_talk/vendor/gems/couch_potato-0.3.0/rails/init.rb
+** couch_potato: initialized from /Users/enzo/progetti/dressipi/couch_talk/vendor/gems/couch_potato-0.3.0/rails/init.rb
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-08-07 11:33:37) [GET]
+Rendering template within layouts/application
+Rendering posts/index
+
+ActionView::TemplateError (undefined local variable or method `new_user_registration' for #<ActionView::Base:0x23b1be8>) on line #16 of app/views/layouts/application.html.erb:
+13: 			<%= link_to "Edit your data", edit_user_registration %> | 
+14: 			<%= link_to "Logout", destroy_user_session %> 
+15: 		<% else %>
+16: 			<%= link_to "Register", new_user_registration %> | 
+17: 	 		<%= link_to "Login", new_user_session %>
+18: 		<% end %>
+19: 	  </div>
+
+    app/views/layouts/application.html.erb:16
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+    warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendered rescues/_trace (47.9ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-08-07 11:33:47) [GET]
+Rendering template within layouts/application
+Rendering posts/index
+
+ActionView::TemplateError (undefined local variable or method `new_user_session' for #<ActionView::Base:0x247b54c>) on line #16 of app/views/layouts/application.html.erb:
+13: 			<%= link_to "Edit your data", edit_user_registration %> | 
+14: 			<%= link_to "Logout", destroy_user_session %> 
+15: 		<% else %>
+16: 	 		<%= link_to "Login", new_user_session %>
+17: 		<% end %>
+18: 	  </div>
+19:       <%- flash.each do |name, msg| -%>
+
+    app/views/layouts/application.html.erb:16
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+    warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendered rescues/_trace (130.7ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-08-07 11:33:48) [GET]
+Rendering template within layouts/application
+Rendering posts/index
+
+ActionView::TemplateError (undefined local variable or method `new_user_session' for #<ActionView::Base:0x2622f1c>) on line #16 of app/views/layouts/application.html.erb:
+13: 			<%= link_to "Edit your data", edit_user_registration %> | 
+14: 			<%= link_to "Logout", destroy_user_session %> 
+15: 		<% else %>
+16: 	 		<%= link_to "Login", new_user_session %>
+17: 		<% end %>
+18: 	  </div>
+19:       <%- flash.each do |name, msg| -%>
+
+    app/views/layouts/application.html.erb:16
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+    warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendered rescues/_trace (47.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-08-07 11:34:23) [GET]
+Rendering template within layouts/application
+Rendering posts/index
+
+ActionView::TemplateError (undefined local variable or method `new_user_session' for #<ActionView::Base:0x23d8860>) on line #17 of app/views/layouts/application.html.erb:
+14: 			<%= link_to "Logout", destroy_user_session %> 
+15: 		<% else %>
+16: 			<%= link_to "Register", {:controller => 'registrations', :action => 'new'} %> | 
+17: 	 		<%= link_to "Login", new_user_session %>
+18: 		<% end %>
+19: 	  </div>
+20:       <%- flash.each do |name, msg| -%>
+
+    app/views/layouts/application.html.erb:17
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+    warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendered rescues/_trace (122.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-08-07 11:34:47) [GET]
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 29ms (View: 7 | 200 OK [http://localhost/]
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2010-08-07 11:34:49) [GET]
+Rendering template within layouts/application
+Rendering registrations/new
+Rendered shared/_devise_links (21.9ms)
+Completed in 93ms (View: 81 | 200 OK [http://localhost/users/sign_up]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-08-07 11:34:51) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_devise_links (0.5ms)
+Completed in 26ms (View: 13 | 200 OK [http://localhost/users/sign_in]
+** couch_potato: initialized from /Users/enzo/progetti/dressipi/couch_talk/vendor/gems/couch_potato-0.3.0/rails/init.rb
+** couch_potato: initialized from /Users/enzo/progetti/dressipi/couch_talk/vendor/gems/couch_potato-0.3.0/rails/init.rb
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-08-07 11:38:42) [GET]
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 99ms (View: 26 | 200 OK [http://localhost/]
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2010-08-07 11:38:44) [GET]
+Rendering template within layouts/application
+Rendering registrations/new
+Rendered shared/_devise_links (22.4ms)
+Completed in 76ms (View: 64 | 200 OK [http://localhost/users/sign_up]
+
+
+Processing RegistrationsController#create (for 127.0.0.1 at 2010-08-07 11:38:58) [POST]
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"QmTP5hWNhYgmF1ecjVhWNnRc9f3FoOPCzKcZ5NsaU/0=", "user"=>{"password_confirmation"=>"achaiah99t", "username"=>"enzoriv", "password"=>"achaiah99t", "email"=>"vincenzo.rivello@gmail.com"}}
+Redirected to http://localhost:3000/
+Completed in 205ms | 302 Found [http://localhost/users]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-08-07 11:38:59) [GET]
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 97ms (View: 55 | 200 OK [http://localhost/]
+
+
+Processing RegistrationsController#edit (for 127.0.0.1 at 2010-08-07 11:39:03) [GET]
+Rendering template within layouts/application
+Rendering registrations/edit
+Rendered shared/_devise_links (0.5ms)
+Completed in 44ms (View: 16 | 200 OK [http://localhost/users/edit]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-08-07 11:39:08) [GET]
+
+NameError (undefined local variable or method `remember_token' for #<User:0x25721d0>):
+  vendor/gems/couch_potato-0.3.0/lib/couch_potato/persistence/ghost_attributes.rb:16:in `method_missing'
+  devise (1.0.8) [v] lib/devise/models/rememberable.rb:53:in `forget_me!'
+  devise (1.0.8) [v] lib/devise/hooks/rememberable.rb:29
+  warden (0.10.7) lib/warden/hooks.rb:14:in `call'
+  warden (0.10.7) lib/warden/hooks.rb:14:in `_run_callbacks'
+  warden (0.10.7) lib/warden/hooks.rb:9:in `each'
+  warden (0.10.7) lib/warden/hooks.rb:9:in `_run_callbacks'
+  warden (0.10.7) lib/warden/manager.rb:53:in `_run_callbacks'
+  warden (0.10.7) lib/warden/proxy.rb:215:in `logout'
+  warden (0.10.7) lib/warden/proxy.rb:213:in `each'
+  warden (0.10.7) lib/warden/proxy.rb:213:in `logout'
+  devise (1.0.8) [v] lib/devise/controllers/helpers.rb:83:in `sign_out'
+  devise (1.0.8) [v] lib/devise/controllers/helpers.rb:156:in `sign_out_and_redirect'
+  devise (1.0.8) [v] app/controllers/sessions_controller.rb:34:in `destroy'
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendered rescues/_trace (65.0ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+** couch_potato: initialized from /Users/enzo/progetti/dressipi/couch_talk/vendor/gems/couch_potato-0.3.0/rails/init.rb
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-08-07 11:39:38) [GET]
+Redirected to http://localhost:3000/
+Completed in 59ms | 302 Found [http://localhost/users/sign_out]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-08-07 11:39:38) [GET]
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 127ms (View: 16 | 200 OK [http://localhost/]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-08-07 11:42:37) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_devise_links (1.6ms)
+Completed in 104ms (View: 91 | 200 OK [http://localhost/users/sign_in]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-07 11:42:42) [POST]
+  Parameters: {"commit"=>"Sign in", "authenticity_token"=>"QmTP5hWNhYgmF1ecjVhWNnRc9f3FoOPCzKcZ5NsaU/0=", "user"=>{"remember_me"=>"0", "password"=>"achaiah99t", "email"=>"enzoriv"}}
+Redirected to http://localhost:3000/
+Completed in 39ms | 302 Found [http://localhost/users/sign_in]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-08-07 11:42:42) [GET]
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 127ms (View: 94 | 200 OK [http://localhost/]
+** couch_potato: initialized from /Users/enzo/progetti/dressipi/couch_talk/vendor/gems/couch_potato-0.3.0/rails/init.rb
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-08-07 11:47:00) [GET]
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 1247ms (View: 937 | 200 OK [http://localhost/]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-08-07 11:47:18) [GET]
+Rendering template within layouts/application
+Rendering posts/index
+
+ActionView::TemplateError (undefined method `link_To' for #<ActionView::Base:0x261617c>) on line #13 of app/views/layouts/application.html.erb:
+10:     <div id="container">
+11: 	  <div id="user_nav">
+12: 		<% if current_user %>
+13: 			<%= link_To "New Post", new_post_path %> |
+14: 			<%= link_to "Edit your data", edit_user_registration_path %> | 
+15: 			<%= link_to "Logout", destroy_user_session_path %> 
+16: 		<% else %>
+
+    app/views/layouts/application.html.erb:13
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+    warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendered rescues/_trace (86.8ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-08-07 11:47:20) [GET]
+Rendering template within layouts/application
+Rendering posts/index
+
+ActionView::TemplateError (undefined method `link_To' for #<ActionView::Base:0x263a1a8>) on line #13 of app/views/layouts/application.html.erb:
+10:     <div id="container">
+11: 	  <div id="user_nav">
+12: 		<% if current_user %>
+13: 			<%= link_To "New Post", new_post_path %> |
+14: 			<%= link_to "Edit your data", edit_user_registration_path %> | 
+15: 			<%= link_to "Logout", destroy_user_session_path %> 
+16: 		<% else %>
+
+    app/views/layouts/application.html.erb:13
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+    warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendered rescues/_trace (52.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-08-07 11:47:29) [GET]
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 220ms (View: 56 | 200 OK [http://localhost/]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2010-08-07 11:47:31) [GET]
+
+ActionView::MissingTemplate (Missing template posts/new.erb in view path app/views:vendor/gems/devise-1.0.8/app/views):
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendering rescues/layout (internal_server_error)
+** couch_potato: initialized from /Users/enzo/progetti/dressipi/couch_talk/vendor/gems/couch_potato-0.3.0/rails/init.rb
+** couch_potato: initialized from /Users/enzo/progetti/dressipi/couch_talk/vendor/gems/couch_potato-0.3.0/rails/init.rb
+** couch_potato: initialized from /Users/enzo/progetti/dressipi/couch_talk/vendor/gems/couch_potato-0.3.0/rails/init.rb
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-08-07 11:49:50) [GET]
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 254ms (View: 151 | 200 OK [http://localhost/]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-08-07 11:50:19) [GET]
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 54ms (View: 31 | 200 OK [http://localhost/]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2010-08-07 11:50:34) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (85.9ms)
+Completed in 120ms (View: 109 | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2010-08-07 11:51:24) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (84.0ms)
+Completed in 102ms (View: 90 | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2010-08-07 11:51:47) [POST]
+  Parameters: {"commit"=>"Create", "post"=>{"body"=>"test post post post", "title"=>"Post test", "published"=>"1", "user"=>"b77b95f5eda018c6e0ee46626e3f0865"}, "authenticity_token"=>"QmTP5hWNhYgmF1ecjVhWNnRc9f3FoOPCzKcZ5NsaU/0="}
+
+ArgumentError (expected User got String):
+  vendor/gems/simply_stored-0.3.6/lib/simply_stored/couch/belongs_to.rb:77:in `user='
+  vendor/gems/couch_potato-0.3.0/lib/couch_potato/persistence.rb:43:in `send'
+  vendor/gems/couch_potato-0.3.0/lib/couch_potato/persistence.rb:43:in `initialize'
+  vendor/gems/couch_potato-0.3.0/lib/couch_potato/persistence.rb:42:in `each'
+  vendor/gems/couch_potato-0.3.0/lib/couch_potato/persistence.rb:42:in `initialize'
+  vendor/gems/simply_stored-0.3.6/lib/simply_stored/instance_methods.rb:5:in `initialize'
+  vendor/gems/couch_potato-0.3.0/lib/couch_potato/persistence/dirty_attributes.rb:11:in `initialize'
+  app/controllers/posts_controller.rb:21:in `new'
+  app/controllers/posts_controller.rb:21:in `create'
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendered rescues/_trace (43.8ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PostsController#new (for 127.0.0.1 at 2010-08-07 11:52:10) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (178.4ms)
+Completed in 200ms (View: 187 | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2010-08-07 11:52:17) [POST]
+  Parameters: {"commit"=>"Create", "post"=>{"body"=>"test post post post", "title"=>"Post test", "published"=>"1", "user_id"=>"b77b95f5eda018c6e0ee46626e3f0865"}, "authenticity_token"=>"QmTP5hWNhYgmF1ecjVhWNnRc9f3FoOPCzKcZ5NsaU/0="}
+Redirected to http://localhost:3000/posts/b77b95f5eda018c6e0ee46626e5e8901
+Completed in 130ms | 302 Found [http://localhost/posts]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2010-08-07 11:52:17) [GET]
+  Parameters: {"id"=>"b77b95f5eda018c6e0ee46626e5e8901"}
+Rendering template within layouts/application
+Rendering posts/show
+Completed in 222ms (View: 198 | 200 OK [http://localhost/posts/b77b95f5eda018c6e0ee46626e5e8901]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2010-08-07 11:52:56) [GET]
+  Parameters: {"id"=>"b77b95f5eda018c6e0ee46626e5e8901"}
+Rendering template within layouts/application
+Rendering posts/show
+Completed in 117ms (View: 70 | 200 OK [http://localhost/posts/b77b95f5eda018c6e0ee46626e5e8901]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2010-08-07 11:53:22) [GET]
+  Parameters: {"id"=>"b77b95f5eda018c6e0ee46626e5e8901"}
+Rendering template within layouts/application
+Rendering posts/show
+Completed in 58ms (View: 37 | 200 OK [http://localhost/posts/b77b95f5eda018c6e0ee46626e5e8901]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-08-07 11:53:23) [GET]
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 196ms (View: 122 | 200 OK [http://localhost/]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-08-07 11:53:48) [GET]
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 145ms (View: 60 | 200 OK [http://localhost/]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-08-07 11:54:23) [GET]
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 169ms (View: 39 | 200 OK [http://localhost/]

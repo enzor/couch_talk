@@ -79,3 +79,16 @@ a {
   font-size: 12px;
   list-style: disc;
 }
+
+#user_nav {
+	font-size:12px;
+	float:right;
+}
+
+#posts {
+	width:100%;
+}
+
+#posts tr td {
+	text-align:center;
+}
